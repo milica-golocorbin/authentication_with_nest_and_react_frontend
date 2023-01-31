@@ -10,7 +10,16 @@ const Header = () => {
             HOME
           </Link>
         </div>
-        <nav></nav>
+        <nav>
+          <ul className="flex gap-5">
+            <li>
+              <Link to="/auth/login">login</Link>
+            </li>
+            <li>
+              <Link to="/auth/create-account">create account</Link>
+            </li>
+          </ul>
+        </nav>
       </section>
     </header>
   );

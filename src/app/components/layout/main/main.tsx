@@ -10,10 +10,10 @@ const Main = ({ children }: Props) => {
   return (
     <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
       <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.7 }}
         key={Math.random()}
         className="flex-1 w-full h-screen text-slate-900 tracking-normal leading-normal flex flex-col justify-center items-center py-10 s:py-11 md:py-12 lg:py-14 xl:py-16 2xl:py-20"
       >
